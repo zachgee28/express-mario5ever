@@ -1,4 +1,5 @@
 var express = require('express');
+var path = require('path');  ///// debug add
 
 var app = express();
 var handlebars = require('express-handlebars');
@@ -11,6 +12,9 @@ app.engine('handlebars', handlebars({
     }
   }
 }))
+
+// view engine setup
+app.set('views', path.join(__dirname, 'views'));  ///// debug add
 app.set('view engine', 'handlebars');
 // app.set('port', 3000);
 app.use(express.static('public'));
@@ -51,4 +55,4 @@ app.use(function(err, req, res, next){
 //   console.log('Express started on http://localhost:' + app.get('port') + '; press Ctrl-C to terminate.');
 // });
 
-module.exports = app;//
+// module.exports = app; //this didn't help
