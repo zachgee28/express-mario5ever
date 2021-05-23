@@ -1,0 +1,75 @@
+{{#section 'head'}}
+    <link rel="stylesheet" href="/css/subpages.css">
+{{/section}}
+
+{{!-- Make scroll box with survey --}}
+<div class="ScrollBox" id="powerups">
+    <h4>What's your favorite power-up?</h4>
+    <form action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" method="POST">
+        <label>Mushroom<input type="radio" name="favItem" value="mushroom"></label>
+        <br>
+        <br>
+        <label>1-Up Mushroom<input type="radio" name="favItem" value="1up"></label>
+        <br>
+        <br>
+        <label>Fire Flower<input type="radio" name="favItem" value="fireFlower"></label>
+        <br>
+        <br>
+        <label>Super Leaf<input type="radio" name="favItem" value="leaf"></label>
+        <br>
+        <br>
+        <label>Super Star<input type="radio" name="favItem" value="star"></label>
+        <br>
+        <br>
+        <input type="submit" id="favSubmit" value="Submit Fave">
+    </form>
+</div>
+
+<div id="main-content">
+    <h1>What Make Mario the Bad Boy He Is</h1>
+    <!-- Navigation bar -->
+    <nav id="navBar">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/allies/">Allies</a></li>
+            <li><a href="/baddies/">Baddies</a></li>
+            <li class="active"><a href="/powerups/">Power-ups</a></li>
+            <li><a href="/games/">Games</a></li>
+        </ul>
+    </nav>
+
+    {{!-- Set up main page layout of top 5 and their unordered lists of info --}}
+    <h2>Some of Mario's Prominent Power-ups</h2>
+    <figure class="Top5" id="mushroom">
+        <h3>Super Mushroom</h3>
+        <img src="/img/Mushroom.png" onmouseover="addBullets(this)">
+        <figcaption class="Imgsrc">https://www.mariowiki.com/Gallery:Super_Mushroom#/media/File:Super_Mushroom_-_2D_shaded.png</figcaption>
+        <div class="infoBox"></div>
+    </figure>
+    <figure class="Top5" id="1up">
+        <h3>1-Up Mushroom</h3>
+        <img src="/img/1up.png" onmouseover="addBullets(this)">
+        <figcaption class="Imgsrc">https://www.mariowiki.com/Gallery:1-Up_Mushroom#/media/File:1up_Mushroom_-_2D_shaded.png</figcaption>
+        <div class="infoBox"></div>
+    </figure>
+    <figure class="Top5" id="fireflower">
+        <h3>Fire Flower</h3>
+        <img src="/img/FireFlower.jpg" onmouseover="addBullets(this)">
+        <figcaption class="Imgsrc">https://www.mariowiki.com/Gallery:Fire_Flower#/media/File:SMW_Fire_Flower.jpg</figcaption>
+        <div class="infoBox"></div>
+    </figure>
+    <figure class="Top5" id="leaf">
+        <h3>Super Leaf</h3>
+        <img src="/img/Super_Leaf.png" onmouseover="addBullets(this)">
+        <figcaption class="Imgsrc">https://super-mario-maker-2-wiki.fandom.com/wiki/Super_Leaf?file=Super_Leaf.png</figcaption>
+        <div class="infoBox"></div>
+    </figure>
+    <figure class="Top5" id="star">
+        <h3>Super Star</h3>
+        <img src="/img/SuperStar.png" onmouseover="addBullets(this)">
+        <figcaption class="Imgsrc">https://www.mariowiki.com/Gallery:Super_Star#/media/File:Super_star_shaded.png</figcaption>
+        <div class="infoBox"></div>
+    </figure>
+</div>
+
+<script src="/js/subpages.js"></script>

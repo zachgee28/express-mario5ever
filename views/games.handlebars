@@ -1,0 +1,75 @@
+{{#section 'head'}}
+    <link rel="stylesheet" href="/css/subpages.css">
+{{/section}}
+
+{{!-- Make scroll box with survey --}}
+<div class="ScrollBox" id="games">
+    <h4>What's your favorite game?</h4>
+    <form action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" method="POST">
+        <label>Super Mario Bros.<input type="radio" name="favGame" value="smb"></label>
+        <br>
+        <br>
+        <label>Super Mario Bros. 3<input type="radio" name="favGame" value="smb3"></label>
+        <br>
+        <br>
+        <label>Super Mario World<input type="radio" name="favGame" value="smw"></label>
+        <br>
+        <br>
+        <label>Super Mario 64<input type="radio" name="favGame" value="sm64"></label>
+        <br>
+        <br>
+        <label>Super Mario Kart 64<input type="radio" name="favGame" value="mk64"></label>
+        <br>
+        <br>
+        <input type="submit" id="favSubmit" value="Submit Fave">
+    </form>
+</div>
+
+<div id="main-content">
+    <h1>Where Mario Struts His Stuff</h1>
+    <!-- Navigation bar -->
+    <nav id="navBar">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/allies/">Allies</a></li>
+            <li><a href="/baddies/">Baddies</a></li>
+            <li><a href="/powerups/">Power-ups</a></li>
+            <li class="active"><a href="/games/">Games</a></li>
+        </ul>
+    </nav>
+
+    {{!-- Set up main page layout of top 5 and their unordered lists of info --}}
+    <h2>Some of Mario's Prominent Games</h2>
+    <figure class="Top5" id="smb">
+        <h3>Super Mario Bros.</h3>
+        <img src="/img/MarioBros.png" onmouseover="addBullets(this)">
+        <figcaption class="Imgsrc">https://www.mariowiki.com/Super_Mario_Bros.   source: https://www.mariowiki.com/Super_Mario_Bros.#/media/File:SMB_Boxart.png</figcaption>
+        <div class="infoBox"></div>
+    </figure>
+    <figure class="Top5" id="smb3">
+        <h3>Super Mario Bros. 3</h3>
+        <img src="/img/SMB3.png" onmouseover="addBullets(this)">
+        <figcaption class="Imgsrc">https://www.mariowiki.com/Super_Mario_Bros._3#/media/File:SMB3_Boxart.png</figcaption>
+        <div class="infoBox"></div>
+    </figure>
+    <figure class="Top5" id="smw">
+        <h3>Super Mario World</h3>
+        <img src="/img/SMW.png" onmouseover="addBullets(this)">
+        <figcaption class="Imgsrc">https://www.mariowiki.com/Super_Mario_World#/media/File:Super_Mario_World_Box.png</figcaption>
+        <div class="infoBox"></div>
+    </figure>
+    <figure class="Top5" id="sm64">
+        <h3>Super Mario 64</h3>
+        <img src="/img/SM64.png" onmouseover="addBullets(this)">
+        <figcaption class="Imgsrc">https://www.mariowiki.com/Super_Mario_64#/media/File:Super_Mario_64_Boxart.png</figcaption>
+        <div class="infoBox"></div>
+    </figure>
+    <figure class="Top5" id="mk64">
+        <h3>Super Mario Kart 64</h3>
+        <img src="/img/MK64.png" onmouseover="addBullets(this)">
+        <figcaption class="Imgsrc">https://www.mariowiki.com/Mario_Kart_64#/media/File:MK64_Cover.png</figcaption>
+        <div class="infoBox"></div>
+    </figure>
+</div>
+
+<script src="/js/subpages.js"></script>

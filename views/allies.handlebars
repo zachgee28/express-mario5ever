@@ -1,0 +1,75 @@
+{{#section 'head'}}
+    <link rel="stylesheet" href="/css/subpages.css">
+{{/section}}
+
+{{!-- Make scroll box with survey --}}
+<div class="ScrollBox" id="allies">
+    <h4>Who's your favorite Mario ally?</h4>
+    <form action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" method="POST">
+        <label>Peach<input type="radio" name="favAlly" value="peach"></label>
+        <br>
+        <br>
+        <label>Luigi<input type="radio" name="favAlly" value="luigi"></label>
+        <br>
+        <br>
+        <label>Toad<input type="radio" name="favAlly" value="toad"></label>
+        <br>
+        <br>
+        <label>Yoshi<input type="radio" name="favAlly" value="yoshi"></label>
+        <br>
+        <br>
+        <label>Rosalina<input type="radio" name="favAlly" value="rosalina"></label>
+        <br>
+        <br>
+        <input type="submit" id="favSubmit" value="Submit Fave">
+    </form>
+</div>
+
+<div id="main-content">
+    <h1>Best and Brightest of Mario's Crew</h1>
+    <!-- Navigation bar -->
+    <nav id="navBar">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li class="active"><a href="/allies/">Allies</a></li>
+            <li><a href="/baddies/">Baddies</a></li>
+            <li><a href="/powerups/">Power-ups</a></li>
+            <li><a href="/games/">Games</a></li>
+        </ul>
+    </nav>
+
+    {{!-- Set up main page layout of top 5 and their unordered lists of info --}}
+    <h2>Some of Mario's Prominent Allies</h2>
+    <figure class="Top5" id="peach">
+        <h3>Princess Peach</h3>
+        <img src="/img/Peach.png" onmouseover="addBullets(this)">
+        <figcaption class="Imgsrc">https://www.mariowiki.com/Super_Mario_Bros.#/media/File:SMB_Peach_Calling_for_Help_Artwork.png</figcaption>
+        <div class="infoBox"></div>
+    </figure>
+    <figure class="Top5" id="luigi">
+        <h3>Luigi</h3>
+        <img src="/img/Luigi.png" onmouseover="addBullets(this)">
+        <figcaption class="Imgsrc">https://www.mariowiki.com/Luigi#/media/File:LuigiSMB2NES.png</figcaption>
+        <div class="infoBox"></div>
+    </figure>
+    <figure class="Top5" id="toad">
+        <h3>Toad</h3>
+        <img src="/img/Toad.png" onmouseover="addBullets(this)">
+        <figcaption class="Imgsrc">https://www.mariowiki.com/Toad#/media/File:SuperPaperToad.png</figcaption>
+        <div class="infoBox"></div>
+    </figure>
+    <figure class="Top5" id="yoshi">
+        <h3>Yoshi</h3>
+        <img src="/img/Yoshi.png" onmouseover="addBullets(this)">
+        <figcaption class="Imgsrc">https://www.mariowiki.com/Yoshi#/media/File:SMW_Art_-_Yoshi.png</figcaption>
+        <div class="infoBox"></div>
+    </figure>
+    <figure class="Top5" id="rosalina">
+        <h3>Rosalina</h3>
+        <img src="/img/Rosalina.png" onmouseover="addBullets(this)">
+        <figcaption class="Imgsrc">https://www.mariowiki.com/Rosalina#/media/File:Rosalina-MPTop100-Transparent.png</figcaption>
+        <div class="infoBox"></div>
+    </figure>
+</div>
+
+<script src="/js/subpages.js"></script>

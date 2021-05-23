@@ -1,0 +1,168 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+h1 {
+    margin: 30px 0 10px; 
+    text-align: center;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    font-size: 70px;
+}
+
+h2 {
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+}
+
+h3 {
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+}
+
+h4 {
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+}
+
+#navBar {
+    display: block;
+    font-size: 0;  /* To remove space between each menu item*/
+    text-align: left;
+    margin-left: 100px;
+}
+
+#navBar ul {
+    list-style-type: none;
+    margin: 5px 0;
+    padding: 0;
+}
+
+#navBar li {
+    display: inline-block;
+    margin: 0;
+    font-size: 16px;
+}
+
+#navBar li a {
+    text-decoration: none;
+    padding: 14px 16px;
+    display: block;
+    font-family: "Lucida Console", "Courier New", monospace;
+    color:darkred;
+    text-shadow: 0 0 4px rgb(105, 9, 214);
+    text-align: center;
+    transition: .4s ease;
+}
+
+#navBar li a:hover, .active {
+    background-color: rgb(238, 206, 23);
+}
+
+.ScrollBox {
+    width: 250px;
+    height: 100vh;
+    overflow: scroll;
+    position: fixed;
+    padding: 10px;
+    top:0;
+}
+
+.ScrollBox figure {
+    border: 1px solid black;
+    overflow: hidden;
+    padding: 0 10px 5px;
+    width: 175px;
+    margin: 10px auto;
+}
+
+.ScrollBox img {
+    display: block;
+    margin: auto;
+}
+
+.ScrollBox figure img {
+    width: 150px;
+    margin-left: 15px;
+}
+
+.ScrollBox form {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.ScrollBox figcaption {
+    font-size:xx-small;
+}
+
+#main-content {
+    margin-left: 270px;
+    min-width: 100vh;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+#main-content figure {
+    border: 1px solid black;
+    width: 500px;
+    margin: auto;
+    margin-bottom: 15px;
+    background-color: rgb(252, 228, 16);
+}
+
+#main-content figure img {
+    height: 250px;
+}
+
+.Imgsrc {
+    font-size: xx-small;
+}
+
+.Top5 {
+    display: block;
+}
+
+.infoBox {
+    height: 80px;
+    width: 350px;
+    background-color: black;
+    color: burlywood;
+    text-align: left;
+    align-content: center;
+    margin: auto;
+    margin-bottom: 5px;
+    padding: 10px;
+}
+
+.infoBox ul {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    list-style-image: url('/img/SMBCoin.gif');
+    font-family: sans-serif;
+}
+
+.infoBox li {
+    -webkit-animation: fade 300ms ease-in;;
+    animation: fade 300ms ease-in;
+}
+
+.infoBox li a {
+    border: 1px solid white;
+    text-decoration: none;
+    padding: 1px;
+    background-color: rgb(219, 237, 248);
+    margin-top: 2px;
+    font-family: monospace;
+}
+
+.infoBox li a:hover {
+    background-color: rgb(152, 214, 252);
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .5}
+    to {opacity: 2}
+  }
+  
+@keyframes fade {
+    from {opacity: .5}
+    to {opacity: 2}
+}

@@ -1,0 +1,75 @@
+{{#section 'head'}}
+    <link rel="stylesheet" href="/css/subpages.css">
+{{/section}}
+
+{{!-- Make scroll box with survey --}}
+<div class="ScrollBox" id="baddies">
+    <h4>Who's your favorite bad guy?</h4>
+    <form action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" method="POST">
+        <label>Bowser<input type="radio" name="favBaddy" value="bowser"></label>
+        <br>
+        <br>
+        <label>Goomba<input type="radio" name="favBaddy" value="goomba"></label>
+        <br>
+        <br>
+        <label>Koopa Troopa<input type="radio" name="favBaddy" value="koopaTroopa"></label>
+        <br>
+        <br>
+        <label>Wario<input type="radio" name="favBaddy" value="wario"></label>
+        <br>
+        <br>
+        <label>Kamek<input type="radio" name="favBaddy" value="kamek"></label>
+        <br>
+        <br>
+        <input type="submit" id="favSubmit" value="Submit Fave">
+    </form>
+</div>
+
+<div id="main-content">
+    <h1>Still Ain't No Match for Mario</h1>
+    <!-- Navigation bar -->
+    <nav id="navBar">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/allies/">Allies</a></li>
+            <li class="active"><a href="/baddies/">Baddies</a></li>
+            <li><a href="/powerups/">Power-ups</a></li>
+            <li><a href="/games/">Games</a></li>
+        </ul>
+    </nav>
+
+    {{!-- Set up main page layout of top 5 and their unordered lists of info --}}
+    <h2>Some of Mario's Prominent Enemies</h2>
+    <figure class="Top5" id="bowser">
+        <h3>Bowser</h3>
+        <img src="/img/Bowser.png" onmouseover="addBullets(this)">
+        <figcaption class="Imgsrc">https://www.mariowiki.com/Bowser#/media/File:SMBLL_Front_Facing_Bowser_Artwork.png</figcaption>
+        <div class="infoBox"></div>
+    </figure>
+    <figure class="Top5" id="goomba">
+        <h3>Goomba</h3>
+        <img src="/img/Goomba.jpg" onmouseover="addBullets(this)">
+        <figcaption class="Imgsrc">https://www.mariowiki.com/Gallery:Goomba#/media/File:Goomba_shaded.jpg</figcaption>
+        <div class="infoBox"></div>
+    </figure>
+    <figure class="Top5" id="koopatroopa">
+        <h3>Koopa Troopa</h3>
+        <img src="/img/KoopaTroopa.png" onmouseover="addBullets(this)">
+        <figcaption class="Imgsrc">https://www.mariowiki.com/Koopa_Troopa#/media/File:SMWKoopa.png</figcaption>
+        <div class="infoBox"></div>
+    </figure>
+    <figure class="Top5" id="wario">
+        <h3>Wario</h3>
+        <img src="/img/Wario.jpg" onmouseover="addBullets(this)">
+        <figcaption class="Imgsrc">https://www.mariowiki.com/Wario#/media/File:Wario_SML2_artwork.jpg</figcaption>
+        <div class="infoBox"></div>
+    </figure>
+    <figure class="Top5" id="kamek">
+        <h3>Kamek</h3>
+        <img src="/img/Kamek.png" onmouseover="addBullets(this)">
+        <figcaption class="Imgsrc">https://www.mariowiki.com/Kamek#/media/File:KamekSW2YI.png</figcaption>
+        <div class="infoBox"></div>
+    </figure>
+</div>
+
+<script src="/js/subpages.js"></script>
