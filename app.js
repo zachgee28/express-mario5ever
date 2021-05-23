@@ -55,4 +55,10 @@ app.use(function(err, req, res, next){
 //   console.log('Express started on http://localhost:' + app.get('port') + '; press Ctrl-C to terminate.');
 // });
 
+/////
+app.listen(process.env.PORT || 3000, function(){
+  console.log('Express started on http://localhost:' + app.get('port') + '; press Ctrl-C to terminate.');
+});   
+/////
+
 // module.exports = app; //this didn't help
