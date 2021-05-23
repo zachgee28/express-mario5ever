@@ -1,6 +1,10 @@
 {
-  "name": "hello-world",
+  "name": "express-mario5ever",
   "version": "1.0.0",
+  "engines": {
+    "node": "12.18.1"
+  },
+  "private": true,
   "description": "Hello world with express and node.js",
   "main": "app.js",
   "scripts": {
